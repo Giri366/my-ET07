@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Cut & Join</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Video Cut & Join Tool</h1>
+
+    <input type="file" id="videoInput" accept="video/*" multiple />
+    
+    <div class="controls">
+      <label>Start Time (seconds): <input type="number" id="startTime" /></label>
+      <label>End Time (seconds): <input type="number" id="endTime" /></label>
+      <button id="cutBtn">Cut Video</button>
+      <button id="mergeBtn">Merge Videos</button>
+    </div>
+
+    <video id="videoPreview" controls></video>
+
+    <div id="output"></div>
+  </div>
+
+  "<script src="libs/ffmpeg.min.js"></script>
+"></script>
+  <script src="app.js"></script>
+</body>
+</html>
